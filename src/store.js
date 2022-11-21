@@ -8,32 +8,32 @@ export const store = reactive({
         {
             text: "Home",
             url: "#",
-            current: false,
+
         },
         {
             text: "Pages",
             url: "#",
-            current: false,
+
         },
         {
             text: "Courses",
             url: "#",
-            current: false,
+
         },
         {
             text: "Features",
             url: "#",
-            current: false,
+
         },
         {
             text: "Blog",
             url: "#",
-            current: false,
+
         },
         {
             text: "Shops",
             url: "#",
-            current: false,
+
         }
     ],
 
