@@ -1,5 +1,6 @@
 <template>
-    <div class="container d-flex align-items-center align-content-center m-auto justify-content-between gap-3 py-3">
+    <div
+        class="gross container d-flex align-items-center align-content-center m-auto justify-content-between gap-3 py-3">
         <div class="logo-cntn">
             <img src="../../public/images/dark-logo.png" alt="">
         </div>
@@ -9,10 +10,12 @@
                 <li><a class=" text-decoration-none" href="#">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
             </ul>
+            <i class="fa-regular fa-circle-user text-black align-self-center"></i>
         </div>
 
         <div>
-            <input type="text" placeholder=" Search...">
+
+            <input class=" bg-transparent border border-0" type="text" placeholder=" Search...">
         </div>
 
 
@@ -35,6 +38,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partial/variables' as *;
+
+.gross {
+    backdrop-filter: blur(20px);
+}
 
 .logo-cntn {
     img {
