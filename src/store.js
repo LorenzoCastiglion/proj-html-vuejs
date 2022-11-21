@@ -165,6 +165,29 @@ export const store = reactive({
         },
 
 
+    ],
+
+    cloud: [
+        {
+            img: '01',
+            title: 'Customize éreference',
+            content: 'Learners are given the right to arrange and customize their study schedule and timetable based on preferences.',
+            cta: 'Start here',
+        },
+
+        {
+            img: '02',
+            title: 'Clous Storage',
+            content: 'You can store online lessons via online cloud or download to tour device and revise lessons on the way',
+            cta: 'Get Free Quote',
+        },
+
+        {
+            img: '03',
+            title: 'Multimedia Channel',
+            content: 'We provide the study materials with various formats: video, audio, slides, doc prints, books and applications',
+            cta: 'Start now',
+        }
     ]
 
 });

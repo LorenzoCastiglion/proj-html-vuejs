@@ -11,7 +11,7 @@
                     guide</button>
 
 
-                <p>Have a question? <span class=" text-decoration-underline">Get Free Sample <i
+                <p class="cta">Have a question? <span class=" text-decoration-underline">Get Free Sample <i
                             class="fa-solid fa-arrow-right "></i> </span></p>
             </div>
 
@@ -50,6 +50,11 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partial/variables' as *;
+
+.cta {
+    margin-top: 10px;
+    font-size: 14px;
+}
 
 p {
     color: $grey;
