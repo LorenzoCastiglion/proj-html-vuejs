@@ -14,7 +14,7 @@
         </div>
 
         <div>
-
+            <i class="fa-solid fa-magnifying-glass me-2"></i>
             <input class=" bg-transparent border border-0" type="text" placeholder=" Search...">
         </div>
 
@@ -40,7 +40,7 @@ export default {
 @use '../assets/styles/partial/variables' as *;
 
 .gross {
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(40px);
 }
 
 .logo-cntn {
@@ -56,5 +56,9 @@ a {
     i {
         font-size: 10px;
     }
+}
+
+.fa-magnifying-glass {
+    color: $turquoise;
 }
 </style>

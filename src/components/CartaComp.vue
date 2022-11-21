@@ -2,7 +2,7 @@
     <div class="d-flex info  align-items-center">
 
         <!-- immagine -->
-        <div class=" p-5">
+        <div class="">
             <div class="img-container overflow-hidden">
                 <img :src="`images/${card.img}.jpg`" alt="">
             </div>
@@ -10,11 +10,14 @@
 
 
         <!-- testo -->
-        <div class="d-flex  flex-column gap-3">
-            <p>{{ card.price }}</p>
-            <p>{{ card.info }}</p>
-            <p>{{ card.lessons }}</p>
-            <p>{{ card.students }}</p>
+        <div class="d-flex flex-column gap-3 ms-3">
+            <p class="price">{{ card.price }}</p>
+            <p class="col-10 fw-bold">{{ card.info }}</p>
+            <div class="d-flex gap-3 about">
+                <span><i class="fa-regular fa-file"></i> {{ card.lessons }} Lessons</span>
+                <span><i class="fa-solid fa-user"></i> {{ card.students }} Students</span>
+            </div>
+
         </div>
 
 
@@ -44,5 +47,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partial/variables' as *;
 
+.img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    img {
+        height: 150px;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.about {
+    font-size: 12px;
+    color: $grey;
+}
+
+.price {
+    font-size: 20px;
+    color: $turquoise;
+    font-weight: bold;
+}
 </style>

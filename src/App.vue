@@ -4,7 +4,7 @@
   </header>
   <main>
     <JumboComp />
-    <CourseComp />
+    <CourseComp class="p-5 corsi" />
 
   </main>
   <footer></footer>
@@ -41,5 +41,9 @@ export default {
 header {
   -webkit-box-shadow: 0px -2px 10px 7px $black;
   box-shadow: 0px -2px 10px 7px $black;
+}
+
+.corsi {
+  background-color: $lightgrey;
 }
 </style>

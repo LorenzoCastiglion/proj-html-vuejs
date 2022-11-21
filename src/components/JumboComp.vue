@@ -25,7 +25,7 @@
 
         </div>
         <!-- brands -->
-        <div class="d-flex justify-content-around m-auto">
+        <div class="d-flex justify-content-around m-auto pb-5 mb-5">
             <div class="" v-for="i in store.brands">
                 <img :src="`/images/client-logo-${i}.png`" alt="">
             </div>
