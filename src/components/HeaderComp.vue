@@ -31,6 +31,9 @@
         <a href="#"><i class="fa-solid fa-book"></i></a>
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
+    <div class="chat position-absolute ">
+        <a href="#"><i class="fa-solid fa-message"></i></a>
+    </div>
 </template>
 
 <script>
@@ -104,5 +107,26 @@ a {
     a i {
         font-size: 16px;
     }
+}
+
+.chat {
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: $blu;
+
+    right: 0;
+    top: 90vh;
+
+    i {
+        font-size: 22px;
+        line-height: 60px;
+        color: $white;
+        transform: rotate(-30deg);
+    }
+
+
 }
 </style>

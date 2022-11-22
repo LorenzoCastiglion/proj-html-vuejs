@@ -17,7 +17,7 @@
 
 <script >
 import { store } from '../store';
-import CarouselCard from './CarouselCard.vue';
+
 
 export default {
     data() {
@@ -27,7 +27,7 @@ export default {
         }
     },
     components: {
-        CarouselCard
+
     }
 }
 

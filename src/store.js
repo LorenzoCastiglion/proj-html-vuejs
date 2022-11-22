@@ -214,6 +214,25 @@ export const store = reactive({
             num: 1090,
             subtitle: 'blog posts'
         },
+    ],
+
+    blog: [
+        {
+            img: 'blog-2',
+            titlesm: 'busines',
+            title: 'Ten Benefits Of Rentals That May Change Your Perspective',
+            date: 'Dec 28, 2020',
+            views: '2,276'
+        },
+
+        {
+            img: 'blog-1',
+            titlesm: 'busines',
+            title: '10 Things Successful Mompreneurs Do Different',
+            date: 'Dec 28, 2020',
+            views: '2,053'
+        }
+
     ]
 
 });

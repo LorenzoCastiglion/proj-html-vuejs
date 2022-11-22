@@ -1,5 +1,10 @@
 <template>
-    <div>
+    <div class="bkg">
+
+        <div class="container d-flex justify-content-center">
+
+
+        </div>
 
     </div>
 </template>
@@ -19,4 +24,9 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partial/variables' as *;
+
+.bkg {
+    background-color: $tortora;
+    height: 200px;
+}
 </style>

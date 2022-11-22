@@ -5,6 +5,7 @@
         <TutoringComp />
         <CarouselComp />
         <CounterComp />
+        <BlogComp />
 
 
     </div>
@@ -17,6 +18,7 @@ import CourseComp from './CourseComp.vue';
 import TutoringComp from './TutoringComp.vue';
 import CarouselComp from './CarouselComp.vue';
 import CounterComp from './CounterComp.vue';
+import BlogComp from './BlogComp.vue';
 export default {
     daat() {
         return {
@@ -30,7 +32,8 @@ export default {
         CourseComp,
         TutoringComp,
         CarouselComp,
-        CounterComp
+        CounterComp,
+        BlogComp
 
     }
 

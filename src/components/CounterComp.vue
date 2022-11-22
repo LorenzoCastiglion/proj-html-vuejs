@@ -21,12 +21,10 @@
 
 <script >
 import { store } from '../store';
-
-import { defineComponent } from 'vue';
 import Vue3autocounter from 'vue3-autocounter';
 
-export default defineComponent({
-    name: 'Demo',
+export default ({
+
     data() {
         return {
             store
@@ -43,7 +41,7 @@ export default defineComponent({
 @use '../assets/styles/partial/variables' as *;
 
 .giorgio {
-    border: 1px solid $tortora;
+    border: 2px solid $tortora;
     height: 400px;
 
 }
