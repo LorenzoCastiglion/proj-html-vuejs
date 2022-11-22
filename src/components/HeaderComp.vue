@@ -14,11 +14,22 @@
         </div>
 
         <div>
-            <i class="fa-solid fa-magnifying-glass me-2"></i>
-            <input class=" bg-transparent border border-0" type="text" placeholder=" Search...">
+
+            <div class="input-group ">
+                <input type="text" class="form-control  searchbar" placeholder="Search..."
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn button" type="button" id="button-addon2"><i
+                        class="fa-solid fa-magnifying-glass me-2"></i></button>
+            </div>
+
         </div>
 
-
+    </div>
+    <div class="side-bar position-absolute d-flex flex-column p-2 pe-4 text-center gap-2">
+        <a href="#"><i class="fa-solid fa-ruler-combined"></i></a>
+        <a href="#"><i class="fa-solid fa-life-ring"></i></a>
+        <a href="#"><i class="fa-solid fa-book"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
 </template>
 
@@ -66,7 +77,32 @@ a {
     }
 }
 
+.button {
+    background-color: $tortora;
+    border: 1px solid $grey;
+    border: 0;
+}
+
+.searchbar {
+    background-color: $tortora;
+    border: 1px solid $grey;
+    border: 0;
+}
+
 .fa-magnifying-glass {
     color: $turquoise;
+}
+
+.side-bar {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-box-shadow: -3px 0px 13px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: -3px 0px 13px 5px rgba(0, 0, 0, 0.35);
+    top: 200px;
+    right: 0;
+
+    a i {
+        font-size: 16px;
+    }
 }
 </style>
