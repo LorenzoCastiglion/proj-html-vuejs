@@ -188,6 +188,32 @@ export const store = reactive({
             content: 'We provide the study materials with various formats: video, audio, slides, doc prints, books and applications',
             cta: 'Start now',
         }
+    ],
+
+    counter: [
+        {
+            title: 'Successfully trained',
+            num: 1790,
+            subtitle: 'enrolled learners'
+        },
+
+        {
+            title: 'Proudly Received',
+            num: 19,
+            subtitle: 'countrywide awards'
+        },
+
+        {
+            title: 'Firmly Established',
+            num: 24,
+            subtitle: 'local branches'
+        },
+
+        {
+            title: 'Getting Featured on',
+            num: 1090,
+            subtitle: 'blog posts'
+        },
     ]
 
 });

@@ -25,7 +25,7 @@
         </div>
 
     </div>
-    <div class="side-bar position-absolute d-flex flex-column p-2 pe-4 text-center gap-2">
+    <div class="side-bar position-absolute d-flex flex-column p-2 pe-3 text-center gap-2">
         <a href="#"><i class="fa-solid fa-ruler-combined"></i></a>
         <a href="#"><i class="fa-solid fa-life-ring"></i></a>
         <a href="#"><i class="fa-solid fa-book"></i></a>

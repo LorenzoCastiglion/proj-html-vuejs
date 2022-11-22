@@ -4,6 +4,8 @@
         <CourseComp class="p-5 corsi" />
         <TutoringComp />
         <CarouselComp />
+        <CounterComp />
+
 
     </div>
 </template>
@@ -14,6 +16,7 @@ import JumboComp from './JumboComp.vue';
 import CourseComp from './CourseComp.vue';
 import TutoringComp from './TutoringComp.vue';
 import CarouselComp from './CarouselComp.vue';
+import CounterComp from './CounterComp.vue';
 export default {
     daat() {
         return {
@@ -26,7 +29,8 @@ export default {
         JumboComp,
         CourseComp,
         TutoringComp,
-        CarouselComp
+        CarouselComp,
+        CounterComp
 
     }
 
