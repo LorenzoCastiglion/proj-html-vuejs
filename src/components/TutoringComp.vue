@@ -1,26 +1,36 @@
 <template>
-    <div class="container">
+    <div class="bkg">
+        <div class=" wrapper-round">
+            <div class="container">
 
-        <TutoringCardComp v-for=" (item, index) in store.cloud" :key="index" :tutor="item" />
-        <div class="d-flex info  align-conten-center align-items-center">
-
-            <!-- immagine -->
-            <div class="">
-                <div class="col-4  rounded-1 p-5">
-                    <img src="/images/home-2-popup-video-poster.jpg" alt="">
+                <div class=" d-flex justify-content-around gap-3">
+                    <TutoringCardComp class="col-3 " v-for=" (item, index) in store.cloud" :key="index" :tutor="item" />
                 </div>
-            </div>
+                <div class="d-flex info  align-conten-center align-items-center mt-5">
+
+                    <!-- immagine -->
+                    <div class="p-5">
+                        <div class="overflow-hidden rounded-1 position-relative ">
+                            <img src="/images/home-2-popup-video-poster.jpg" alt="">
+                            <img class="player-logo " src="/images/icon-youtube-play.png" alt="">
+                        </div>
+                    </div>
 
 
-            <!-- testo -->
-            <div class="d-flex flex-column col-6 gap-3 ms-3">
-                <p class="text-uppercase text-secondary">get started <span
-                        class=" text-uppercase fw-bold text-black">effortlessly</span></p>
-                <h2 class=" fw-bold">Enjoy Our <span>Companionship</span></h2>
-                <p>Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek for some
-                    hidden hints of early-bird rewards as well.</p>
-                <p class="cta">Download the free guidebook <i class="fa-solid fa-arrow-right"></i></p>
+                    <!-- testo -->
+                    <div class="d-flex flex-column col-4 gap-3 ms-3">
+                        <p class="text-uppercase text-secondary">get started <span
+                                class=" text-uppercase fw-bold text-black">effortlessly</span></p>
+                        <h2 class=" fw-bold">Enjoy Our <br> <span>Companionship</span></h2>
+                        <p>Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek
+                            for
+                            some
+                            hidden hints of early-bird rewards as well.</p>
+                        <span class="cta col-8">Download the free guidebook <i
+                                class="fa-solid fa-arrow-right"></i></span>
 
+                    </div>
+                </div>
             </div>
 
 
@@ -52,19 +62,52 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partial/variables' as *;
 
-.img-container {
-    width: 300px;
+.bkg {
+    background-color: $tortora;
 
-    img {
-        height: 200px;
+}
+
+
+.wrapper-round {
+    background-color: white;
+    border-bottom-right-radius: 550px;
+}
+
+.player-logo {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    transform: translate(-50%, -50%);
+}
+
+
+
+img {
+    height: 300px;
+    margin: 0 auto;
+    align-self: center;
+    width: 100%;
+    transition: 4s ease;
+
+    &:hover {
+        transform: scale(1.2);
     }
 }
+
+
 
 h2 {
     span {
         color: $turquoise;
         font-weight: normal;
     }
+}
+
+p {
+    color: $grey;
 }
 
 .cta {
