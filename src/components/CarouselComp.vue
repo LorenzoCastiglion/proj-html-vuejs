@@ -7,10 +7,10 @@
         <div class="text-center m-5">
             <h1>carosello da fare</h1>
         </div>
-        <div class=" text-center">
+        <div class=" text-center pb-5">
             <p>Start today for getting <span>Online Certification</span></p>
             <h3>You can be your own guidig start with our help!</h3>
-            <button class="cta">Get started now</button>
+            <button class="cta mb-4">Get started now</button>
         </div>
     </div>
 </template>

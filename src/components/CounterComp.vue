@@ -1,16 +1,19 @@
 <template>
 
 
-    <div v-for="i in store.counter">
+    <div class="container d-flex justify-content-center  ">
+        <div class="col-3 giorgio justify-content-center d-flex flex-column text-center px-5"
+            v-for="i in store.counter">
 
-        <h2>{{ i.title }}</h2>
+            <h3>{{ i.title }}</h3>
 
-        <div class=" fw-bold">
-            <vue3-autocounter ref='counter' :startAmount='0' :endAmount='i.num' :duration='4' prefix='' suffix=''
-                separator='' decimalSeparator='.' :autoinit='true' @finished='alert(`Counting finished!`)' />
+            <div class="numero">
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='i.num' :duration='2' prefix='' suffix=''
+                    separator='' decimalSeparator='.' :autoinit='true' @finished='alert(`Counting finished!`)' />
+            </div>
+
+            <p class=" text-secondary text-uppercase">{{ i.subtitle }}</p>
         </div>
-
-        <p>{{ i.subtitle }}</p>
     </div>
 
 
@@ -38,4 +41,18 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @use '../assets/styles/partial/variables' as *;
+
+.giorgio {
+    border: 1px solid $tortora;
+    height: 400px;
+
+}
+
+.numero {
+    color: $turquoise;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 20px 0;
+
+}
 </style>
