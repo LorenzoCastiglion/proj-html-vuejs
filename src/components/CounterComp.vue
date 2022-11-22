@@ -6,7 +6,7 @@
         <h2>{{ i.title }}</h2>
 
         <div class=" fw-bold">
-            <vue3-autocounter ref='counter' :startAmount='0' :endAmount='i.num' :duration='2' prefix='' suffix=''
+            <vue3-autocounter ref='counter' :startAmount='0' :endAmount='i.num' :duration='4' prefix='' suffix=''
                 separator='' decimalSeparator='.' :autoinit='true' @finished='alert(`Counting finished!`)' />
         </div>
 
