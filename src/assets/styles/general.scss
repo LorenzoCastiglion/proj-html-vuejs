@@ -4,6 +4,7 @@ $fa-font-path : "./webfonts";
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100;400;700&display=swap');
 
 @import 'bootstrap/scss/bootstrap.scss';
 
@@ -11,4 +12,5 @@ $fa-font-path : "./webfonts";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $main-font;
 }
