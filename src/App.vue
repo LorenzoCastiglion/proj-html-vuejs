@@ -3,20 +3,19 @@
     <HeaderComp />
   </header>
   <main>
-    <JumboComp />
-    <CourseComp class="p-5 corsi" />
+    <MainComp />
 
   </main>
   <footer></footer>
 </template>
 
 <script>
-import CartaComp from './components/CartaComp.vue';
-import JumboComp from './components/JumboComp.vue';
+
+
 import HeaderComp from './components/HeaderComp.vue';
 import MainComp from './components/MainCompo.vue';
 import FooterComp from './components/FooterComp.vue';
-import CourseComp from './components/CourseComp.vue';
+
 
 export default {
 
@@ -24,8 +23,8 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp,
-    JumboComp,
-    CourseComp
+
+
 
 
   }

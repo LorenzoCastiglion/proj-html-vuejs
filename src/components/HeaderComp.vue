@@ -10,7 +10,7 @@
                 <li><a class=" text-decoration-none" href="#">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
             </ul>
-            <i class="fa-regular fa-circle-user text-black align-self-center"></i>
+            <i class="fa-regular fa-circle-user fa-shake text-black align-self-center"></i>
         </div>
 
         <div>
@@ -52,9 +52,17 @@ export default {
 
 a {
     color: $black;
+    transition: 0.5s;
+
+
+    &:hover {
+        color: $turquoise;
+
+    }
 
     i {
         font-size: 10px;
+
     }
 }
 

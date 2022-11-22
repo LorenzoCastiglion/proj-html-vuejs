@@ -170,7 +170,7 @@ export const store = reactive({
     cloud: [
         {
             img: '01',
-            title: 'Customize éreference',
+            title: 'Customize reference',
             content: 'Learners are given the right to arrange and customize their study schedule and timetable based on preferences.',
             cta: 'Start here',
         },
