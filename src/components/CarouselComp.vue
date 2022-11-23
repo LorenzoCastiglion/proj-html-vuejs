@@ -14,7 +14,7 @@
                     <div class=" text-start mx-3 bg-white p-5 rounded-3">
                         <h4>{{ slide.title }}</h4>
                         <p class="slide-content">{{ slide.content }}</p>
-                        <div class="d-flex  align-items-center">
+                        <div class="d-flex mt-2  align-items-center">
                             <div class=" overflow-hidden img-cont">
                                 <img :src="`../../public/images/testimonial-avata-${slide.pic}.jpg`" alt="">
                             </div>
