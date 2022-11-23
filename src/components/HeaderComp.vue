@@ -158,11 +158,11 @@ a {
     margin-right: 10px;
     width: 60px;
     height: 60px;
-    background-color: $blu;
+    background-color: $turquoise;
     transition: 0.5s ease;
 
     &:hover {
-        background-color: $turquoise;
+        background-color: $yellow;
         transform: translateY(5px);
     }
 

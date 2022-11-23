@@ -41,7 +41,7 @@ export default {
     bottom: -100px;
     right: 65px;
     color: #ffffff;
-    background-color: $blu;
+    background-color: $turquoise;
     z-index: 4;
     width: 45px;
     text-align: center;
@@ -73,7 +73,7 @@ export default {
     }
 
     &:hover {
-        background-color: $turquoise;
+        background-color: $yellow;
         color: #ffffff;
         transition: .6s;
         box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
