@@ -8,17 +8,17 @@
             </div>
 
 
-            <Carousel :items-to-show="3" :wrap-around="true">
+            <Carousel class="my-5" :items-to-show="3" :wrap-around="true">
                 <Slide v-for="slide in store.carouselcard" :key="slide">
 
-                    <div class="mx-3 bg-white p-5 ">
+                    <div class=" text-start mx-3 bg-white p-5 rounded-3">
                         <h4>{{ slide.title }}</h4>
-                        <p>{{ slide.content }}</p>
-                        <div class="d-flex gap-4 align-items-center">
+                        <p class="slide-content">{{ slide.content }}</p>
+                        <div class="d-flex  align-items-center">
                             <div class=" overflow-hidden img-cont">
                                 <img :src="`../../public/images/testimonial-avata-${slide.pic}.jpg`" alt="">
                             </div>
-                            <p class="mb-0">{{ slide.name }} <br> <span>{{ slide.job }}</span></p>
+                            <p class="mb-0 ms-3 nomeproff">{{ slide.name }} <br> <span>{{ slide.job }}</span></p>
                         </div>
                     </div>
 
@@ -29,21 +29,6 @@
                     <Navigation />
                 </template>
             </Carousel>
-
-
-
-            <!-- <div class="row flex-wrap" v-for="item in store.carouselcard">
-                        <div class=" col-4 bg-white p-5 ">
-                            <h4>{{ item.title }}</h4>
-                            <p>{{ item.content }}</p>
-                            <div class="d-flex gap-4 align-items-center">
-                                <div class=" overflow-hidden img-cont">
-                                    <img :src="`../../public/images/testimonial-avata-${item.pic}.jpg`" alt="">
-                                </div>
-                                <p class="mb-0">{{ item.name }} <br> <span>{{ item.job }}</span></p>
-                            </div>
-                        </div>
-                    </div> -->
 
 
             <div>
@@ -111,13 +96,17 @@ span {
     }
 }
 
-.scroller {
-
-    overflow: auto;
-    display: flex;
+h4 {
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.scrollbar {
-    width: 4000px;
+.slide-content {
+    font-size: 12px;
+    color: $grey;
+}
+
+.nomeproff {
+    font-size: 14px;
 }
 </style>

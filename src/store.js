@@ -459,16 +459,16 @@ export const store = reactive({
         },
 
         {
-            title: 'Professional team of specialists and passionate mentors at reach',
-            content: 'I need to ge a certification for English proficiency and MaxCoach is my best choice. Theur tytors are smart and professional when dealing with students',
+            title: 'Professional team of specialists and passionate',
+            content: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Theur tytors are smart and professional when dealing with students',
             name: 'madley pondor',
             job: '/IT specialist',
             pic: '04'
         },
 
         {
-            title: 'I like turtles',
-            content: 'TUUUUURTLEEEESSSS!!!',
+            title: 'Amazingly proud of being a MaxCoachee',
+            content: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Theur tytors are smart and professional when dealing with students',
             name: 'Pough Bigsley',
             job: '/Accountant',
             pic: '01'
