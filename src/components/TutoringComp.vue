@@ -73,6 +73,7 @@ export default {
     border-bottom-right-radius: 550px;
 }
 
+
 .player-logo {
     width: 60px;
     height: 40px;
@@ -81,8 +82,9 @@ export default {
     left: 50%;
     z-index: 100;
     transform: translate(-50%, -50%);
-}
 
+
+}
 
 
 img {
@@ -92,9 +94,14 @@ img {
     width: 100%;
     transition: 4s ease;
 
-    &:hover {
+
+
+
+    &:hover:not(.player-logo) {
         transform: scale(1.2);
     }
+
+
 }
 
 

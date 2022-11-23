@@ -6,19 +6,21 @@
         </div>
 
         <div class="">
-            <ul class="d-flex gap-4 list-unstyled m-0 position-relative uldprdwn">
-                <li v-for="i in store.NavItems"><a class=" drpdwn  text-decoration-none hover-underline-animation "
-                        href="#" @click="i.hover = !i.hover">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="d-flex gap-4 list-unstyled m-0  uldprdwn">
+                <li v-for="i in store.NavItems"><a
+                        class=" drpdwn position-relative  text-decoration-none hover-underline-animation " href="#"
+                        @click="i.hover = !i.hover">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
 
                     <Transition name="v">
-                        <div class="drpdwn-menu position-absolute p-4 d-flex bg-white" v-if="i.hover">
+                        <div class="drpdwn-menu position-absolute p-4 d-flex bg-white" v-if="i.hover"
+                            @mouseleave="i.hover = !i.hover">
                             <ul class="list-unstyled row">
                                 <li class="col-5  text-capitalize" v-for="(j, index) in i.link" :key="index"
                                     :class="{ 'hot': j.hot, 'new': j.new }">
                                     {{ j.title }}
                                 </li>
                                 <li>
-                                    <div class="col-3">
+                                    <div class="col">
                                         <img :src="`images/${i.dwnimg}.jpg`" alt="">
                                     </div>
                                 </li>
