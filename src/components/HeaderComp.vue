@@ -47,10 +47,15 @@
 
     </div>
     <div class="side-bar position-absolute d-flex flex-column p-2 pe-3 text-center gap-2">
-        <a href="#"><i class="fa-solid fa-ruler-combined"></i></a>
-        <a href="#"><i class="fa-solid fa-life-ring"></i></a>
-        <a href="#"><i class="fa-solid fa-book"></i></a>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-ruler-combined position-relative" @mouseover="popped = !popped"
+                @mouseleave="popped = false">
+                <Transition name="pop">
+                    <span class=" p-1 rounded popup position-absolute" v-show="popped">Select Demo</span>
+                </Transition>
+            </i></a>
+        <a href="#"><i class="fa-solid fa-life-ring position-relative"></i></a>
+        <a href="#"><i class="fa-solid fa-book position-relative"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping position-relative"></i></a>
     </div>
     <div class="chat position-absolute ">
         <a href="#"><i class="fa-solid fa-message"></i></a>
@@ -63,7 +68,7 @@ export default {
     data() {
         return {
             store,
-
+            popped: false,
         }
     }
 
@@ -285,5 +290,26 @@ a {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.popup {
+    top: -10px;
+    right: 50px;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+}
+
+.pop-enter-active,
+.pop-leave-active {
+    transition: all 0.5s ease;
+
+}
+
+.pop-enter-from,
+.pop-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
+
 }
 </style>
