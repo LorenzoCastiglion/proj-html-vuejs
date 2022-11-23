@@ -6,7 +6,9 @@
     <MainComp />
 
   </main>
-  <footer></footer>
+  <footer>
+    <FooterComp />
+  </footer>
 </template>
 
 <script>

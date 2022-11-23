@@ -9,7 +9,7 @@
 
             <div class="numero">
                 <vue3-autocounter ref='counter' :startAmount='0' :endAmount='i.num' :duration='2' prefix='' suffix=''
-                    separator='' decimalSeparator='.' :autoinit='true' @finished='alert(`Counting finished!`)' />
+                    separator='' decimalSeparator='.' :autoinit='true' />
             </div>
 
             <p class=" text-secondary text-uppercase">{{ i.subtitle }}</p>

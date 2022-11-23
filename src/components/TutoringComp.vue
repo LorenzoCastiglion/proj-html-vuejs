@@ -79,7 +79,7 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 100000;
+    z-index: 100;
     transform: translate(-50%, -50%);
 }
 

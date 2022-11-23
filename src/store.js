@@ -8,31 +8,327 @@ export const store = reactive({
         {
             text: "Home",
             url: "#",
+            hover: false,
+            link: [
+                {
+                    title: 'maxCoach education',
+                    hot: true,
+                    new: false
+                },
+                {
+                    title: 'course portal',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'distant learning',
+                    hot: true,
+                    new: false
+                },
+                {
+                    title: 'multimedia pedagogy',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'moderrn schooling',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'remote training',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'health coaching',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'gym coaching',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'business',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'artist',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'kitchen coach',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'motivation',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'dancin',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'guitar',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'yoga',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'photography',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'personal finance',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'sales coaching',
+                    hot: false,
+                    new: true
+                },
+                {
+                    title: 'mental therapy',
+                    hot: false,
+                    new: true
+                },
+
+            ],
+
+            dwnimg: 'dropdown_img'
+
 
         },
         {
             text: "Pages",
             url: "#",
+            hover: false,
+            link: [
+                {
+                    title: 'start here',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'success story',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'about me',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'about us 01',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'about us 02',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'about us 03',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'contact me',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'contact us',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'purchase guide',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'privacy policy',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'terms of service',
+                    hot: false,
+                    new: false
+                },
+
+
+
+            ],
+
+            dwnimg: ''
+
 
         },
         {
             text: "Courses",
             url: "#",
+            hover: false,
+            link: [
+                {
+                    title: 'course grid 01',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'course grid 02',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'course grid 03',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'membership level',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'become a teacher',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'profile',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'checkout',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'single layout',
+                    hot: false,
+                    new: false
+                },
+
+
+            ],
+
+            dwnimg: ''
 
         },
         {
             text: "Features",
             url: "#",
+            hover: false,
+            link: [
+                {
+                    title: 'events',
+                    hot: false,
+                    new: false
+                },
+
+                {
+                    title: 'zoom meetings',
+                    hot: false,
+                    new: false
+                },
+
+            ],
+
+            dwnimg: ''
+
 
         },
         {
             text: "Blog",
             url: "#",
+            hover: false,
+            link: [
+                {
+                    title: 'blog grid',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'blog masonry',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'blog classic',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'blog list',
+                    hot: false,
+                    new: false
+                },
+            ],
+            dwnimg: ''
+
 
         },
         {
-            text: "Shops",
+            text: "Shop",
             url: "#",
+            hover: false,
+            link: [
+                {
+                    title: 'shop left sidebar',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'shop right sidebar',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'cart',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'wishlist',
+                    hot: false,
+                    new: false
+                },
+                {
+                    title: 'single product',
+                    hot: false,
+                    new: false
+                },
+            ],
+            dwnimg: ''
+
 
         }
     ],
@@ -46,6 +342,11 @@ export const store = reactive({
                 'suppor@maxcoach.com'
             ],
             icons: [
+                'fa-square-facebook',
+                'fa-twitter',
+                'fa-instagram',
+                'fa-linkedin'
+
 
             ]
         },
@@ -60,6 +361,10 @@ export const store = reactive({
                 'Courses',
                 'Contact us'
             ],
+            icons: [
+
+
+            ]
 
         },
 
@@ -71,6 +376,11 @@ export const store = reactive({
                 'Privacy policy',
                 'Terms of services'
             ],
+            icons: [
+
+
+
+            ]
         }
 
 

@@ -3,11 +3,12 @@
         <div class="d-flex info align-content-center align-items-center justify-content-between">
             <!-- testo -->
             <div class="d-flex col-6 flex-column gap-3">
-                <h1>Distant learning for further expansion</h1>
+                <h1 class=" fw-bold">Distant learning for further expansion</h1>
                 <p>Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy
                     the process.</p>
 
-                <button class="col-4 py-2 text-white"><i class="fa-solid fa-download fa-shake"></i> Download free
+                <button class="col-4 py-3 bottone text-white"><i class="fa-solid fa-download fa-shake"></i> Download
+                    free
                     guide</button>
 
 
@@ -27,7 +28,7 @@
         </div>
         <!-- brands -->
         <div class="d-flex justify-content-around m-auto pb-5 mb-5">
-            <div class="" v-for="i in store.brands">
+            <div class="company" v-for="i in store.brands">
                 <img :src="`/images/client-logo-${i}.png`" alt="">
             </div>
         </div>
@@ -63,9 +64,10 @@ p {
 }
 
 button {
+    width: 250px;
     background-color: $turquoise;
     border: 0;
-    border-radius: 8px;
+    border-radius: 6px;
     font-weight: bold;
     font-size: 12px;
 }
@@ -78,6 +80,10 @@ span {
     height: 600px;
 }
 
+.bottone:hover {
+    background-color: rgb(65, 21, 80);
+}
+
 .img-container {
 
     height: 400px;
@@ -88,5 +94,10 @@ span {
         object-position: center;
         height: 400px;
     }
+}
+
+.company:hover {
+    filter: contrast(2), ;
+    mix-blend-mode: multiply;
 }
 </style>

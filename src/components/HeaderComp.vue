@@ -5,12 +5,35 @@
             <img src="../../public/images/dark-logo.png" alt="">
         </div>
 
-        <div class="d-flex gap-4">
-            <ul v-for="i in store.NavItems" class=" list-unstyled m-0">
-                <li><a class=" text-decoration-none" href="#">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="">
+            <ul class="d-flex gap-4 list-unstyled m-0 position-relative">
+                <li v-for="i in store.NavItems"><a class=" drpdwn text-decoration-none hover-underline-animation "
+                        href="#" @mouseover="i.hover = true">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <Transition name="v">
+                        <div class="drpdwn-menu position-absolute p-4 d-flex bg-white" v-if="i.hover"
+                            @mouseleave="i.hover = false">
+                            <ul class="list-unstyled row">
+                                <li class="col-5  text-capitalize" v-for="(j, index) in i.link" :key="index"
+                                    :class="{ 'hot': j.hot, 'new': j.new }">
+                                    {{ j.title }}
+                                </li>
+                                <li>
+                                    <div class="col-3">
+                                        <img :src="`images/${i.dwnimg}.jpg`" alt="">
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </Transition>
+
                 </li>
+                <i class="fa-regular fa-circle-user fa-shake text-black align-self-center"></i>
             </ul>
-            <i class="fa-regular fa-circle-user fa-shake text-black align-self-center"></i>
+
         </div>
 
         <div>
@@ -84,17 +107,34 @@ a {
     background-color: $tortora;
     border: 1px solid $grey;
     border: 0;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $turquoise;
+
+        i {
+            color: white;
+        }
+
+    }
 }
 
 .searchbar {
     background-color: $tortora;
     border: 1px solid $grey;
     border: 0;
+
+    &:focus {
+
+        box-shadow: 0px 0px 1px 1px $turquoise;
+    }
 }
 
 .fa-magnifying-glass {
     color: $turquoise;
 }
+
+
 
 .side-bar {
     border-top-left-radius: 10px;
@@ -128,5 +168,110 @@ a {
     }
 
 
+}
+
+// dropdown menu
+
+.drpdwn:hover {
+
+    transition: 0.25s ease;
+
+    .fa-chevron-down {
+        transform: rotate(180deg);
+    }
+}
+
+.drpdwn-menu {
+    width: auto;
+    min-width: 300px;
+
+    z-index: 10000;
+
+    top: 46px;
+
+    border-bottom: 2px solid $turquoise;
+
+    ul {
+
+        background-color: $white;
+
+
+        li {
+            margin-bottom: 5px;
+            font-size: 12px;
+            padding: 0 0.5rem;
+            transition: 0.4s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: $turquoise;
+            }
+
+            &.hot::after {
+                font-size: 10px;
+                content: 'HOT';
+                border-radius: 3px;
+                padding: 3px;
+                margin-left: 2px;
+                background-color: $red;
+                color: white;
+
+            }
+
+            &.new::after {
+                content: 'NEW';
+                font-size: 10px;
+                border-radius: 3px;
+                padding: 3px;
+                margin-left: 2px;
+                background-color: $turquoise;
+                color: white;
+            }
+        }
+
+    }
+
+
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: all 0.5s ease;
+
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+
+}
+
+// hover su item nav
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+
+    cursor: pointer;
+
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $turquoise;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 </style>

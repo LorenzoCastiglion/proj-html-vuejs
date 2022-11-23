@@ -6,6 +6,7 @@
         <CarouselComp />
         <CounterComp />
         <BlogComp />
+        <NewsLetterComp />
 
 
     </div>
@@ -19,6 +20,7 @@ import TutoringComp from './TutoringComp.vue';
 import CarouselComp from './CarouselComp.vue';
 import CounterComp from './CounterComp.vue';
 import BlogComp from './BlogComp.vue';
+import NewsLetterComp from './NewsLetterComp.vue';
 export default {
     daat() {
         return {
@@ -33,7 +35,8 @@ export default {
         TutoringComp,
         CarouselComp,
         CounterComp,
-        BlogComp
+        BlogComp,
+        NewsLetterComp
 
     }
 
