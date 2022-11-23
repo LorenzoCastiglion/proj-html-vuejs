@@ -154,6 +154,12 @@ a {
     width: 60px;
     height: 60px;
     background-color: $blu;
+    transition: 0.5s ease;
+
+    &:hover {
+        background-color: $turquoise;
+        transform: translateY(5px);
+    }
 
     right: 0;
     top: 90vh;

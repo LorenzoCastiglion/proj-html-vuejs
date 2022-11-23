@@ -9,11 +9,14 @@
   <footer>
     <FooterComp />
   </footer>
+  <div>
+    <ArrowTop />
+  </div>
 </template>
 
 <script>
 
-
+import ArrowTop from './components/ArrowTop.vue';
 import HeaderComp from './components/HeaderComp.vue';
 import MainComp from './components/MainComp.vue';
 import FooterComp from './components/FooterComp.vue';
@@ -25,6 +28,7 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp,
+    ArrowTop
 
 
 
