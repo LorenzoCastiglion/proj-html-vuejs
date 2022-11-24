@@ -8,7 +8,7 @@
             <h3>{{ i.title }}</h3>
 
             <div class="numero">
-                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='i.num' :duration='2' prefix='' suffix=''
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='i.num' :duration='30' prefix='' suffix=''
                     separator='' decimalSeparator='.' :autoinit='true' />
             </div>
 

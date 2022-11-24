@@ -50,9 +50,10 @@
         <a href="#"><i class="fa-solid fa-ruler-combined position-relative" @mouseover="popped = !popped"
                 @mouseleave="popped = false">
                 <Transition name="pop">
-                    <span class=" p-1 rounded popup position-absolute" v-show="popped">Select Demo</span>
+                    <span class=" p-1 rounded popup position-absolute" v-if="popped">Select Demo</span>
                 </Transition>
             </i></a>
+
         <a href="#"><i class="fa-solid fa-life-ring position-relative"></i></a>
         <a href="#"><i class="fa-solid fa-book position-relative"></i></a>
         <a href="#"><i class="fa-solid fa-cart-shopping position-relative"></i></a>

@@ -110,4 +110,12 @@ h4 {
 .nomeproff {
     font-size: 14px;
 }
+
+.carousel__slide--next {
+    opacity: 0.5;
+}
+
+.carousel__slide--prev {
+    opacity: 0.5;
+}
 </style>
